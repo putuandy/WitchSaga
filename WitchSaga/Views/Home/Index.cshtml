@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Dead People Calculator";
+}
+
+<div class="calculator-card">
+    <h1 class="text-center mb-4" style="color: #333; font-size: 24px;">Dead People Calculator</h1>
+    <form id="personForm" method="post">
+        <div class="person-pane">
+            <div class="mb-3 person-panel">
+                <div>
+                    <label for="ageOfDeath" class="form-label">Age of Death:</label>
+                    <input type="number" class="form-control" id="ageOfDeath" name="ageOfDeath" placeholder="Enter age of death" min="1" max="100" required>
+                </div>
+                <div>
+                    <label for="yearOfDeath" class="form-label">Year of Death:</label>
+                    <input type="number" class="form-control" id="yearOfDeath" name="yearOfDeath" placeholder="Enter year of death" min="1" max="2025" required>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3 add-person-panel">
+            <button type="button" class="btn btn-primary mb-3" id="addPersonBtn">Add Person</button>
+        </div>
+        <div class="button-panel">
+            <button type="submit" class="btn btn-primary mb-3" id="submitBtn">
+                Calculate Dead Count
+            </button>
+        </div>
+        <div class="result-box">
+            <div id="resultText">Enter values above and click calculate</div>
+        </div>
+    </form>
+</div>
